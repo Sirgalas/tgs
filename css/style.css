@@ -1,0 +1,447 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial;}
+	
+html, body,label{
+	width:100%;
+	height:100%;
+	}
+	
+label{
+	display:inline-block;}
+
+span, input, textarea,label div{
+	width:40%;
+	display:inline-block;
+	font-family:Arial;
+	font-size:20px;
+	color:#666;}
+	
+div  textarea{
+	width:95%;
+	border:2px solid #ccc;
+}
+
+span{
+	margin:10px;}
+	
+label span a{
+	padding:10px;
+	height:auto;
+	display:inline-block;
+	width:40%;
+	border:2px solid #666;
+	text-align:center;
+	text-decoration:none;
+	font-size:20px;
+	background:#ccc;
+	color:#666;
+}
+	
+h1{
+	text-align:center;
+	font-family:Arial;
+	font-size:26px;
+	color:#666;}
+	
+h2{
+	text-align:center;
+	padding:10px 0;
+	font-family:Arial;
+	font-size:26px;
+	color:#666;}
+	
+#tabs ul{
+	padding:0 10px;}
+
+#tabs ul li{
+	float:left;
+	border-radius:6px 6px 0 0;
+	border:2px solid #ccc;
+	margin-right:2px;
+	padding:5px 20px;
+	list-style:none;
+	border-bottom: none;
+	margin-top:2px;}
+		
+#tabs ul li:hover{
+	border-color:#666;
+	background:#ccc;
+	color:#666;}
+		
+#tabs ul li a{
+	text-decoration:none;
+	color:#666;
+	font-family:arial;
+	font-size:20px;}
+	
+#tabs ul .ui-tabs-active{
+	background-color: #fff;
+	margin-top: -8px;
+	padding: 10px 25px;
+	position: relative;
+	top: 2px;
+	z-index: 2;}	
+	
+	
+#tabs>div{
+	clear:both;
+	margin:0 10px;
+	width:99%;
+	border:2px solid #ccc;
+	padding:10px 0;}
+	
+#tabs>div	form input:focus, #tabs>div form textarea:focus{
+	border:2px solid #666;
+	background:#ccc;
+	}
+	
+#tabs>div	form input{
+	height:30px;}
+
+#tabs>div	form input, #tabs>div form textarea{
+	border:2px solid #ccc;
+	padding:0 10px;
+	}	
+	
+#tabs>div	form	.plus a,a.pluss {
+	border:3px solid #666;
+	color:#666;
+	background:#ccc;
+	position:absolute;
+	padding:0 7px;
+	font-family:arial;
+	font-size:20px;
+	margin-top:7px;
+	text-decoration:none;
+	border-radius:50%;
+	display:inline-block;
+	right:235px;}
+.redactAct	a.pluss, .redactServices a.pluss {
+	right:200px
+}
+.textCenter{
+	text-align:center;
+}
+#tabs>div	form #tgs{
+		display:none;
+}
+input[type=radio] {
+	visibility: hidden;
+}
+
+.roundedOne label label{
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	left: 50%;
+	top: 4px;
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+.roundedOne label label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: #00bf00;
+	background: -webkit-linear-gradient(top, #fffccc 0%, #ccc 100%);
+	background: -moz-linear-gradient(top, #fffccc 0%, #ccc 100%);
+	background: -o-linear-gradient(top, #fffccc 0%, #ccc 100%);
+	background: -ms-linear-gradient(top, #fffccc 0%, #ccc 100%);
+	background: linear-gradient(top, #fffccc 0%, #ccc 100%);
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	top: 1px;
+	left: 1px;
+}
+.roundedOne > label{
+		position:relative;
+}
+.roundedOne label label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.roundedOne input[type=radio]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+select {
+	width: 400px;
+	height: 35px;
+
+	border:3px solid #ccc;
+	-webkit-appearance: none;
+	background-image: url('/img/up11.png');
+	background-size:5% 80%;
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 1em;
+  /* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+  /* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+}
+
+#tabs>div	form .submit, form .submit {
+	padding:10px;
+	height:auto;
+	margin-bottom:10px;
+	display:inline-block;
+	width:40%;
+	margin-left:42%;
+	border:2px solid #666;
+	text-align:center;
+	text-decoration:none;
+	font-size:20px;
+	background:#ccc;
+	color:#666;}
+	
+#tabs>div	form .border{
+	position:relative;
+	background:#E4D7BE;
+}
+
+.hidden{
+	display:none;
+	
+}
+
+.ui-datepicker-div{
+	background:#505049;	
+}
+
+.ui-datepicker-header{
+		background:#E4D7BE;
+}
+
+.ui-datepicker-header a span{
+	color:#252524;
+}
+
+.ui-datepicker-month,.ui-datepicker-year{
+		background:#fff;
+		font-size:12px;
+		width:75px;
+}
+
+
+.ui-datepicker-week-end{
+		text-align:center;
+}
+
+.ui-datepicker-calendar{
+	background:#505049;
+}
+.ui-menu{
+	background: rgba(80, 80, 73, 0.7);
+	width: 40%!important;
+}
+.ui-menu li{
+		list-style:none;
+		color:#fff;
+		padding:5px 10px;
+		font-size:16px;
+		font-family:Arial;
+}
+.ui-helper-hidden-accessible{
+		display:none;
+}
+.ui-datepicker-calendar span,.ui-datepicker-calendar .ui-state-default{
+	color:#fff;
+}
+.ui-accordion-header{
+		margin-top:10px;
+		background:#505049;
+		color:#fff;
+		padding:10px;
+		font-size:18px;
+		font-family:Arial;
+}
+.ui-accordion>h3 span{
+	position:relative;
+}
+.ui-accordion>h3 span:after{
+	position:absolute;
+	content: "\e091";
+	display:inline-block;
+	font-family: "Flaticon";
+	width:25px;
+	height:25px;
+	font-size:26px;
+	top:-10px;
+	right:0;
+	color:#fff;
+	
+}
+.ui-accordion .ui-state-active span:after{
+	content: "\e082";
+	
+}
+
+#tabs>div	form .border a{
+	right:5px;
+	}
+	
+.ui-icon-circle-triangle-w{
+		padding-left:95px;
+		position:relative;
+		width:50px;}
+		
+.ui-icon-circle-triangle-w:after{
+	font-family: "Flaticon";
+	display:inline-block;
+	position:absolute;
+	left:-2px;
+	font-size:20px;
+	content: "\e085";}
+	
+.ui-icon-circle-triangle-e:after{
+	font-family: "Flaticon";
+	display:inline-block;
+	position:absolute;
+	right:20px;
+	font-size:20px;
+	content: "\e110";}
+	
+.registerForm{
+		width:100%;
+		height:100%;
+		background:#7600F4;
+		padding-top:200px;}
+		
+.registerForm form{
+		width:360px;
+		height:165px;
+		margin: auto ;
+		border:1px solid #F400CB;
+		border-radius:10px;}
+		
+.registerForm form span{
+		color:#F400CB;}
+		
+.registerForm form .submit{
+		text-align:center;
+		background:#F400CB;
+		color:#fff;
+		width:280px;
+		border:0;
+		border-radius:15px;
+		padding:10px 0;
+		margin:10px 0 0 40px;}
+		
+#tabs > div form input.ui-autocomplete-loading{
+		background:url('../img/loadingAnimation.gif') no-repeat;
+		background-position:100% 0px;
+		background-size:10% 100%;}
+		
+.clientSearch th{
+	background:#505049;
+	color:#fff;}
+	
+.clientSearch td{
+	background:#04A3DD;}
+	
+.clientSearch th, .clientSearch td{
+	padding:0 10px;}
+	
+.clientSearch td a{
+	font-weight:600;
+	color:#fff;
+	text-decoration:none;}
+	
+table.report{
+	width:auto;}
+	
+table.report thead td{
+	background:#505049;
+	color:#fff;
+	padding:2px;}
+
+table.report tbody td{
+	background:#04A3DD;
+	padding:2px;}
+	
+.WordSection{
+	width:700px;
+	margin:auto;
+}	
+	
+.WordSection table{
+	border-collapse:collapse;
+	border:none;
+	border-left:1px solid #000;
+}
+
+.WordSection table .height{
+	height:46.0pt;
+}
+
+.WordSection table .height{
+	height:46.0pt;
+}
+.WordSection table .half{
+	height:24.75pt;
+}
+.WordSection table tr{
+
+}
+.WordSection table tr td p{
+	 margin-bottom:0cm;
+	 margin-bottom:.0001pt;
+	 line-height: normal;
+}
+.WordSection table tr td p span{
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif; 
+	color:black}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
