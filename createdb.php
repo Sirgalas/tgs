@@ -13,6 +13,21 @@ mysql_query($sql) or die(mysql_error());
 mysql_select_db(DB_NAME) or die(mysql_error());
 
 $sql = "
+CREATE TABLE akt (
+	id int(11) NOT NULL auto_increment,
+	familyNumber int(11) NOT NULL '',
+	actСode varchar(550) NOT NULL default '',
+	actItself varchar(550) NOT NULL default '',
+	data date NOT NULL default '0000-00-00',
+	result varchar(550) NOT NULL default '',
+	userId int(12) NOT NULL,
+	socialResult varchar(555) NOT NULL default '',
+	kesh int(12) NOT NULL '',
+	PRIMARY KEY (id)
+)";
+mysql_query($sql) or die(mysql_error());
+
+$sql = "
 CREATE TABLE catalog (
 	id int(11) NOT NULL auto_increment,
 	name varchar(550) NOT NULL default '',
